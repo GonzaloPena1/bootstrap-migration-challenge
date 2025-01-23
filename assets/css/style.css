@@ -1,0 +1,39 @@
+body {
+  background-color: #f4f4f4;
+}
+.navbar {
+  background-color: #3a3a3a !important;
+  font-weight: bold;
+  /* Indigo */
+}
+
+.navbar li a {
+  color: white !important;
+}
+.navbar li a:hover {
+  color: #f7b15c !important;
+}
+
+.cards-main .card {
+  border: none;
+}
+.btn-primary {
+  background-color: #e68b1f;
+  border-color: #e68b1f;
+}
+
+.btn-primary:hover {
+  background-color: #f7b15c;
+  border-color: #f7b15c;
+}
+
+/* NEED TO CENTER CADRDS WHEN SMALL SCREEN */
+
+/*
+
+@media only screen and (max-width: 600px) {
+  .cards-main .card {
+    justify-content: space-evenly !important;
+  }
+}
+*/
