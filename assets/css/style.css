@@ -1,10 +1,29 @@
+/*CSS Variables*/
+:root {
+  --main-bg-color: #3a3a3a;
+  --main-color: white;
+  --button-main-color: #e68b1f;
+  --button-hover-color: #f7b15c;
+  --spacing-0: 0;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-100: 100px;
+  --spacing-200: 200px;
+  --spacing-300: 300px;
+}
 body {
   background-color: #f4f4f4;
 }
+/* Navbar */
 .navbar {
   background-color: #3a3a3a !important;
   font-weight: bold;
-  /* Indigo */
 }
 
 .navbar li a {
@@ -13,10 +32,11 @@ body {
 .navbar li a:hover {
   color: #f7b15c !important;
 }
-
+/* Cards */
 .cards-main .card {
   border: none;
 }
+/* Buttons */
 .btn-primary {
   background-color: #e68b1f;
   border-color: #e68b1f;
@@ -27,13 +47,46 @@ body {
   border-color: #f7b15c;
 }
 
-/* NEED TO CENTER CADRDS WHEN SMALL SCREEN */
+/* Partners Carousel */
+.logos::before,
+.logos::after {
+  content: "";
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
 
-/*
+.logos::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
+}
 
-@media only screen and (max-width: 600px) {
-  .cards-main .card {
-    justify-content: space-evenly !important;
+.logos::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
+}
+
+.logos-slide {
+  animation: 20s slide infinite linear;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide img {
+  height: 60px;
+  margin: 0 50px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
   }
 }
-*/
