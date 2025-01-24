@@ -1,3 +1,6 @@
+/* Imports */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 /*CSS Variables*/
 :root {
   --main-bg-color: #3a3a3a;
@@ -90,3 +93,14 @@ body {
     transform: translateX(-100%);
   }
 }
+
+/* Testimonials */
+
+.testimonials .card {
+  border: none;
+}
+.bg-primary {
+  background: #e68b1f !important;
+}
+
+/*TESTIMONIALS CARDS NEED MARGIN BOTTOM WHEN SMALL SCREEN  use!important? maybe*/
