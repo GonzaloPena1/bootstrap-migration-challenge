@@ -30,7 +30,7 @@ body {
 }
 
 .navbar li a {
-  color: white !important;
+  color: var(--main-color) !important;
 }
 .navbar li a:hover {
   color: #f7b15c !important;
@@ -48,6 +48,11 @@ body {
 .btn-primary:hover {
   background-color: #f7b15c;
   border-color: #f7b15c;
+}
+
+.btn-primary:active {
+  background-color: var(--button-main-color) !important;
+  border-color: var(--button-main-color) !important;
 }
 
 /* Partners Carousel */
@@ -151,10 +156,6 @@ body {
 .contact-form .btn-primary {
   padding-left: 190px !important;
   padding-right: 190px !important;
-}
-.contact-form .btn-primary:active {
-  background-color: var(--button-main-color);
-  border-color: var(--button-main-color);
 }
 
 /* About page */
