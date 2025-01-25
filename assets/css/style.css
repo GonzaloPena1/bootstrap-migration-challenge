@@ -18,7 +18,7 @@
   --spacing-50: 50px;
   --spacing-60: 60px;
   --spacing-190: 190px;
-  --spacing-221: 221px;
+  --spacing-210: 210px;
   --spacing-300: 300px;
 }
 body {
@@ -181,8 +181,8 @@ body {
 
 /* Contact page */
 .contact-form .btn-primary {
-  padding-left: var(--spacing-190) !important;
-  padding-right: var(--spacing-190) !important;
+  padding-left: var(--spacing-190);
+  padding-right: var(--spacing-190);
 }
 
 /* About page */
@@ -195,7 +195,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .contact-form .btn-primary {
-    padding-left: var(--spacing-221) !important;
-    padding-right: var(--spacing-221) !important;
+    padding-left: var(--spacing-210);
+    padding-right: var(--spacing-210);
   }
 }
