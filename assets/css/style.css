@@ -98,9 +98,18 @@ body {
 
 .testimonials .card {
   border: none;
+  margin-bottom: 50px !important;
 }
 .bg-primary {
   background: #e68b1f !important;
 }
 
-/*TESTIMONIALS CARDS NEED MARGIN BOTTOM WHEN SMALL SCREEN  use!important? maybe*/
+/* On smaller screens...... */
+
+/*
+@media only screen and (max-width: 600px) {
+  .testimonials .card {
+    margin-bottom: 50px !important;
+  }
+}
+*/
