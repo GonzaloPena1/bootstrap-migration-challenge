@@ -143,6 +143,10 @@ body {
   margin-bottom: 0;
 }
 
+.footer-help .footer-basic {
+  margin-top: 300px;
+}
+
 /* Contact page */
 .contact-form .btn-primary {
   padding-left: 190px !important;
