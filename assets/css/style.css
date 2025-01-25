@@ -4,28 +4,29 @@
 /*CSS Variables*/
 :root {
   --main-bg-color: #3a3a3a;
+  --secondary-bg-color: #f4f4f4;
   --main-color: white;
   --button-main-color: #e68b1f;
   --button-hover-color: #f7b15c;
   --spacing-0: 0;
-  --spacing-5: 5px;
   --spacing-10: 10px;
   --spacing-15: 15px;
   --spacing-20: 20px;
   --spacing-30: 30px;
   --spacing-40: 40px;
-  --spacing-48: 48px;
   --spacing-50: 50px;
-  --spacing-100: 100px;
-  --spacing-200: 200px;
+  --spacing-60: 60px;
+  --spacing-190: 190px;
+  --spacing-221: 221px;
   --spacing-300: 300px;
 }
 body {
-  background-color: #f4f4f4;
+  background-color: var(--secondary-bg-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 /* Navbar */
 .navbar {
-  background-color: #3a3a3a !important;
+  background-color: var(--main-bg-color) !important;
   font-weight: bold;
 }
 
@@ -33,7 +34,7 @@ body {
   color: var(--main-color) !important;
 }
 .navbar li a:hover {
-  color: #f7b15c !important;
+  color: var(--button-hover-color) !important;
 }
 /* Cards */
 .cards-main .card {
@@ -41,13 +42,13 @@ body {
 }
 /* Buttons */
 .btn-primary {
-  background-color: #e68b1f;
-  border-color: #e68b1f;
+  background-color: var(--button-main-color);
+  border-color: var(--button-main-color);
 }
 
 .btn-primary:hover {
-  background-color: #f7b15c;
-  border-color: #f7b15c;
+  background-color: var(--button-hover-color);
+  border-color: var(--button-hover-color);
 }
 
 .btn-primary:active {
@@ -59,20 +60,20 @@ body {
 .logos::before,
 .logos::after {
   content: "";
-  width: 300px;
+  width: var(--spacing-300);
   height: 100%;
   position: absolute;
-  top: 0;
+  top: var(--spacing-0);
   z-index: 2;
 }
 
 .logos::before {
-  left: 0;
+  left: var(--spacing-0);
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #fff);
 }
 
 .logos::after {
-  right: 0;
+  right: var(--spacing-0);
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
 }
 
@@ -85,8 +86,8 @@ body {
 }
 
 .logos-slide img {
-  height: 60px;
-  margin: 0 50px;
+  height: var(--spacing-60);
+  margin: var(--spacing-0) var(--spacing-50);
 }
 
 @keyframes slide {
@@ -103,31 +104,31 @@ body {
 
 .testimonials .card {
   border: none;
-  margin-bottom: 50px !important;
+  margin-bottom: var(--spacing-50) !important;
 }
 .bg-primary {
-  background: #e68b1f !important;
+  background: var(--button-main-color) !important;
 }
 
 /* Footer */
 
 .footer-basic {
-  padding: 40px 0;
+  padding: var(--spacing-40) var(--spacing-0);
   background-color: var(--main-bg-color);
   color: var(--main-color);
 }
 
 .footer-basic ul {
-  padding: 0;
+  padding: var(--spacing-0);
   list-style: none;
   text-align: center;
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 0;
+  margin-bottom: var(--spacing-0);
 }
 
 .footer-basic li {
-  padding: 0 10px;
+  padding: var(--spacing-0) var(--spacing-10);
 }
 
 .footer-basic ul a {
@@ -141,34 +142,34 @@ body {
 }
 
 .footer-basic .copyright {
-  margin-top: 15px;
+  margin-top: var(--spacing-15);
   text-align: center;
   font-size: 13px;
   color: #aaa;
-  margin-bottom: 0;
+  margin-bottom: var(--spacing-0);
 }
 
 .footer-help .footer-basic {
-  margin-top: 300px;
+  margin-top: var(--spacing-300);
 }
 
 /* Contact page */
 .contact-form .btn-primary {
-  padding-left: 190px !important;
-  padding-right: 190px !important;
+  padding-left: var(--spacing-190) !important;
+  padding-right: var(--spacing-190) !important;
 }
 
 /* About page */
 .container-article .about-page {
   font-size: 17px !important;
-  padding: 40px !important;
-  margin-top: 20px !important;
+  padding: var(--spacing-40) !important;
+  margin-top: var(--spacing-20) !important;
 }
 /* On smaller screens */
 
 @media only screen and (max-width: 600px) {
   .contact-form .btn-primary {
-    padding-left: 221px !important;
-    padding-right: 221px !important;
+    padding-left: var(--spacing-221) !important;
+    padding-right: var(--spacing-221) !important;
   }
 }
