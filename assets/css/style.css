@@ -143,12 +143,19 @@ body {
   margin-bottom: 0;
 }
 
-/* On smaller screens...... */
+.contact-form .btn-primary {
+  padding-left: 190px !important;
+  padding-right: 190px !important;
+}
+.contact-form .btn-primary:active {
+  background-color: var(--button-main-color);
+  border-color: var(--button-main-color);
+}
+/* On smaller screens */
 
-/*
 @media only screen and (max-width: 600px) {
-  .testimonials .card {
-    margin-bottom: 50px !important;
+  .contact-form .btn-primary {
+    padding-left: 221px !important;
+    padding-right: 221px !important;
   }
 }
-*/
